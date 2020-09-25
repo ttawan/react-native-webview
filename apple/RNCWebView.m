@@ -1267,7 +1267,7 @@ static NSDictionary* customCertificatesForHost;
     "})(window.history)\n", HistoryShimName
   ];
   WKUserScript *script = [[WKUserScript alloc] initWithSource:html5HistoryAPIShimSource injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:YES];
-  [wkWebViewConfig.userContentController addUserScript:script];
+//   [wkWebViewConfig.userContentController addUserScript:script];
 
   if(_sharedCookiesEnabled) {
     // More info to sending cookies with WKWebView
